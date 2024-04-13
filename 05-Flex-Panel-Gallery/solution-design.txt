@@ -1,0 +1,33 @@
+In this challenge, we have an HTML page with 5 panels. Our goal is to:
+
+# Put them panels side-to-side [X]
+# Formatting the text in vertical [X]
+# Create two animations:
+  - In the panel, we'll make it open whenever the mouse goes over it [X]
+  - The text will appear in the card (the will come from offscreen) when the mouse goes over it [X]
+
+To accomplish these requirements, we'll follow the following steps:
+
+# Add flexbox property to the panels container, which will make each children to be side to side
+# Add flex-grow equals to 1 (or simply flex: 1) to each child, ensuring they'll have the same size while
+  occupying all the available space.
+# Add a flex property to the panels with direction = column, aligning the text it contains vertically
+# Add a transform property with translateY so the text goes offscreen
+# Add a transition to this, so when the class from the previous step is removed in JS, they "slide" in the card
+# In JS, add two events:
+  - First for the mouse over the cards
+  - Lastly another one for when the mouse leaves, return everything to the original property
+
+
+-----------------------------------------------------------------------------------
+LESSONS LEARNED:
+
+1. It's really important to pay attention in the order of your CSS classes! Messing up their order may lead to
+unexpected results.
+2. I wanted to adapt the original solution to different events. The challenge wants it to be a 'click' event
+while I was more inclined to solve it using 'mouseenter' or 'mouseover' and, as its counterpart, 'mouseleave' or 'mouseout'.
+And I learned that:
+  # 'mouseenter' is a counterpart for 'mouseleaver'. They are only related to the element which the event is attached to.
+  # 'mouseover' and 'mouseout' both attach not only to the element but also to its children!
+3. Better understanding on how to use the 'transitionend' event, and one of its properties called propertyName, which allows
+to identify which CSS property the transition has been applied to
