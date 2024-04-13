@@ -8,11 +8,11 @@ In this README.md file, I'll be covering all the challenges I've already complet
 ## Challenges 👨‍💻
 | Challenge name | Status |
 | --- | ---|
-| JavaScript Drum Kit |  ❌  |
-| JS and CSS Clock | ❌  |
-| CSS Variables | ❌  |
-| Array Cardio Day 1 |  ❌  |
-| Flex Panel Gallery |  ❌  |
+| JavaScript Drum Kit |  ☑️  |
+| JS and CSS Clock | ☑️  |
+| CSS Variables | ☑️  |
+| Array Cardio Day 1 |  ☑️  |
+| Flex Panel Gallery |  ☑️  |
 | Type Ahead |  ❌  |
 | Array Cardio Day 2 |  ❌  |
 | Fun with HTML5 Canvas |  ❌  |
