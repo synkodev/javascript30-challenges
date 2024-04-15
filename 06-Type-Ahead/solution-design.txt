@@ -1,0 +1,12 @@
+In this challenge, we're making an AJAX type ahead feature where based
+on the user input in an <input type='text'> element we'll suggest a list of
+cities or states that match.
+
+1. Fetch the cities from the endpoint [X]
+2. Filter the results based on the input [X]
+  # This should include a RegEx test, if the city/state name .includes() the input;
+  # If using .includes(), also make sure the name is .toLowerCase().
+3. Add an event to the input field, so whenever the user types a new character it
+call the search method again to find the new matches [X]
+4. Display these results [X]
+  # Results should highlight the part of the word that matches the results
