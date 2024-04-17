@@ -13,9 +13,9 @@ In this README.md file, I'll be covering all the challenges I've already complet
 | CSS Variables | ☑️  |
 | Array Cardio Day 1 |  ☑️  |
 | Flex Panel Gallery |  ☑️  |
-| Type Ahead |  ❌  |
-| Array Cardio Day 2 |  ❌  |
-| Fun with HTML5 Canvas |  ❌  |
+| Type Ahead |  ☑️  |
+| Array Cardio Day 2 |  ☑️  |
+| Fun with HTML5 Canvas |  ☑️  |
 | Dev Tools Domination |  ❌  |
 | Hold Shift and Check Checkboxes |  ❌  |
 | Custom Video Player |  ❌  |
