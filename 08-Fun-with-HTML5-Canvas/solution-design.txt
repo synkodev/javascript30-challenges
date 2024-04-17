@@ -1,0 +1,16 @@
+This will be a very challenging one, since I know almost nothing
+about HTML canvas. That being sad, probably I'll watch the challenge video
+and try to learn from it, instead of creating a solution myself and then
+comparing to the official resolution of the challenge.
+
+Therefore, here is how I would structure what needs to be done to build
+an interactive canvas:
+
+# Select the canvas element in JS
+# A flag to detect whenever the user is wanting to draw or nothing
+# Get the canvas context and resize it the same size as the window
+# Use context properties for drawing:
+  # strokeStyle = indicates the color, gradient, pattern used for the outlines of shapes
+  # lineJoin = determines how two line segments will look like when they meet
+  # lineCap = indicates the shape with which the end of lines will be drawn
+# Keep track on where the mouse last stopped (lastOffsetX and lastOffsetY location)
