@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Console Tricks!</title>
+  <link rel="icon" href="https://fav.farm/🔥" />
+</head>
+<body>
+
+  <p onClick="makeGreen()">×BREAK×DOWN×</p>
+
+  <script>
+    const dogs = [{ name: 'Snickers', age: 2 }, { name: 'hugo', age: 8 }];
+
+    function makeGreen() {
+      const p = document.querySelector('p');
+      p.style.color = '#BADA55';
+      p.style.fontSize = '50px';
+    }
+
+    // Regular
+    console.log(dogs);
+
+    // Interpolated
+    console.log(`The dogs name is ${dogs[0].name}!`);
+
+    // Styled
+    console.log(`%cThe dogs name is ${dogs[0].name}!`, 'font-size: 50px; color: white; background-color: black;');
+
+    // warning!
+    console.warn('This is a warning!');
+
+    // Error :|
+    console.error('Oh no... Error!');
+
+    // Info
+    console.info('In the desert, the cheetah lives up to 3 years and the camel up to 9!');
+
+    // Testing
+    console.assert(dogs.length === 3, dogs);
+
+    // clearing
+    // console.clear();
+
+    // Viewing DOM Elements
+    const p = document.querySelector('p');
+    console.log(p);
+    console.dir(p);
+
+    // Grouping together
+    dogs.forEach(dog => {
+      console.groupCollapsed(dog.name);
+      console.log(`Name: ${dog.name}`);
+      console.log(`Age: ${dog.age}`);
+      console.groupEnd(dog.name);
+    })
+
+    // counting
+    console.count('Wes');
+    console.count('Synkodev');
+    console.count('Wes');
+    console.count('Wes');
+    console.count('Synkodev');
+    console.count('Wes');
+
+
+    // timing
+    console.time('Dog object');
+    dogs.forEach(dog => {
+      console.log(`This is ${dog.name} and it has ${dog.age} years old.`)
+    })
+    console.timeEnd('Dog object');
+
+  </script>
+</body>
+</html>
