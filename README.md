@@ -16,9 +16,9 @@ In this README.md file, I'll be covering all the challenges I've already complet
 | Type Ahead |  ☑️  |
 | Array Cardio Day 2 |  ☑️  |
 | Fun with HTML5 Canvas |  ☑️  |
-| Dev Tools Domination |  ❌  |
-| Hold Shift and Check Checkboxes |  ❌  |
-| Custom Video Player |  ❌  |
+| Dev Tools Domination |  ☑️  |
+| Hold Shift and Check Checkboxes |  ☑️  |
+| Custom Video Player |  ☑️  |
 | Key Sequence Detection |  ❌  |
 | Slide in on Scroll |  ❌  |
 | JavaScript References VS Copying |  ❌  |
