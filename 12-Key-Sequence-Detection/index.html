@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Key Detection</title>
+    <script type="text/javascript" src="./cornify.js"></script>
+    <link rel="icon" href="https://fav.farm/🔥" />
+    <style>
+      h1 {
+        position: absolute;
+        top: 50%;
+        width: 100%;
+        text-align: center;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Try typing java30 and see what happens!</h1>
+    <script>
+      /* These will keep track of the last keys typed */
+      const lastKeys = [];
+      const secretWord = "java30";
+
+      window.addEventListener('keypress', (e) => {
+        /* Pushes every single key to the array, keeping it always same size as the word (removing the first with shift() method) */
+        lastKeys.push(e.key);
+        if (lastKeys.length > secretWord.length) lastKeys.shift();
+        /* If the last N keys of the array compose the secret word, execute the secret method */
+        if (lastKeys.join("") === secretWord) cornify_add();
+      });
+    </script>
+  </body>
+</html>
