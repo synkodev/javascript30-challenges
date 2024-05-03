@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Mouse Shadow</title>
+  <link rel="icon" href="https://fav.farm/🔥" />
+</head>
+<body>
+
+  <div class="hero">
+    <h1 contenteditable>@synkodev 🧑‍💻</h1>
+  </div>
+
+  <style>
+  html {
+    color: black;
+    font-family: sans-serif;
+  }
+
+  body {
+    margin: 0;
+  }
+
+  .hero {
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: black;
+  }
+
+  h1 {
+    text-shadow: 10px 10px 0 rgba(0,0,0,1);
+    font-size: 100px;
+  }
+  </style>
+
+<script>
+  const hero = document.querySelector('.hero');
+  const title = document.querySelector('h1');
+
+  hero.addEventListener('mousemove', (event) => {
+    let { offsetX: x, offsetY: y } = event;
+    const { offsetWidth: width, offsetHeight: height } = hero;
+    const variation = 40;
+
+    if (event.target === title) {
+      x += event.target.offsetLeft;
+      y += event.target.offsetTop;
+    }
+
+    const xVariation = (x / width * variation) - (variation / 2);
+    const yVariation = (y / height * variation) - (variation / 2);
+    title.style.textShadow = `${xVariation}px ${yVariation}px 0px gold`;
+  })
+</script>
+</body>
+</html>
